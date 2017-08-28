@@ -1,5 +1,5 @@
 {
-	"name": "phpmq/benchmarks",
+	"name": "php-mq/benchmarks",
 	"description": "Benchmarks for PHPMQ",
 	"minimum-stability": "dev",
 	"prefer-stable": true,
@@ -34,7 +34,7 @@
 	"extra": {
 		"tools": {
 			"phpunit": {
-				"url": "https://phar.phpunit.de/phpunit-6.2.3.phar",
+				"url": "https://phar.phpunit.de/phpunit-6.3.0.phar",
 				"only-dev": true
 			},
 			"coveralls": {

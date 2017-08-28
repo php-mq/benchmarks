@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via pull requests on [GitHub](https://github.com/phpmq/benchmarks).
+We accept contributions via pull requests on [GitHub](https://github.com/php-mq/benchmarks).
 
 ## Pull Requests
 
@@ -22,4 +22,4 @@ We accept contributions via pull requests on [GitHub](https://github.com/phpmq/b
 ## Running the tests
 
 	$ composer update
-    $ php vendor/bin/phpunit.phar -c build
+	$ php vendor/bin/phpunit.phar -c build

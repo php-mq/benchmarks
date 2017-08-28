@@ -13,4 +13,4 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a CH
 
 
 
-[1.0.0]: https://github.com/phpmq/benchmarks/tree/v1.0.0
+[1.0.0]: https://github.com/php-mq/benchmarks/tree/v1.0.0
