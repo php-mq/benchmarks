@@ -11,7 +11,9 @@
 		}
 	],
 	"require": {
-		"php": ">=7.1"
+		"php": ">=7.1",
+		"php-mq/client": "dev-master",
+		"symfony/console": "^3.0"
 	},
 	"autoload": {
 		"psr-4": {
@@ -33,16 +35,8 @@
 	},
 	"extra": {
 		"tools": {
-			"phpunit": {
-				"url": "https://phar.phpunit.de/phpunit-6.3.0.phar",
-				"only-dev": true
-			},
-			"coveralls": {
-				"url": "https://github.com/satooshi/php-coveralls/releases/download/v1.0.1/coveralls.phar",
-				"only-dev": true
-			},
-			"phpmetrics": {
-				"url": "https://github.com/phpmetrics/PhpMetrics/releases/download/v2.2.0/phpmetrics.phar",
+			"phpmq": {
+				"url": "file:///php-mq/phar/build/phpmq.phar",
 				"only-dev": true
 			}
 		}

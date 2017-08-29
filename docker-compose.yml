@@ -1,0 +1,28 @@
+version: "2"
+
+services:
+  server:
+    container_name: phpmq-server
+    image: php:7.1
+    restart: "on-failure"
+    ports:
+      - "127.0.0.1:9100-9101:9100-9101"
+    volumes:
+      - ./:/code
+    command: php /code/vendor/bin/phpmq.phar /code/config/phpmq.xml
+
+  client:
+    image: php:7.1
+    restart: "on-failure"
+    volumes:
+      - ./:/code
+    links:
+      - "server:phpmq-server"
+
+  composer:
+    container_name: composer
+    restart: "no"
+    image: composer:latest
+    volumes:
+      - ./:/code
+      - /Users/hollodotme/Sites/PHPMQ/phar:/php-mq/phar
